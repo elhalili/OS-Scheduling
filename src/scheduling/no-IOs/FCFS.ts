@@ -1,5 +1,5 @@
 import { Process, ScheduledProcess } from "../../types";
-import { Scheduler } from "../Schduler";
+import { Scheduler } from "../Scheduler";
 
 /**
  * First-Come, First-Served (FCFS) scheduling algorithm implementation.

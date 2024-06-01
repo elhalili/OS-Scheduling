@@ -1,5 +1,5 @@
-import { Process, ScheduledProcess } from "../../types";
-import { Scheduler } from "../Schduler";
+import { Process, ScheduledProcess, ProcessState } from "../../types";
+import { Scheduler } from "../Scheduler";
 
 /**
  * Round Robin scheduling algorithm implementation.

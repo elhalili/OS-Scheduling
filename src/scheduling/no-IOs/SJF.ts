@@ -1,5 +1,5 @@
 import { Process, ScheduledProcess } from "../../types";
-import { Scheduler } from "../Schduler";
+import { Scheduler } from "../Scheduler";
 
 /**
  * Shortest Job First (SJF) scheduling algorithm implementation.
