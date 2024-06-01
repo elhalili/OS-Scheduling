@@ -1,0 +1,64 @@
+{
+  "name": "os-scheduling",
+  "version": "1.0.0",
+  "description": "CLI and Desktop app for os scheduling policies",
+  "main": "compiled/src/gui/main.js",
+  "build": {
+    "appId": "com.aelhalili.scheduleros",
+    "productName": "scheduler App",
+    "files": [
+      "compiled/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "compiled/src/gui/assets"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility"
+    }
+  },
+  "scripts": {
+    "copy-src": "copyfiles 'src/**/*' -e 'src/**/*.ts' compiled",
+    "build-tsc": "npm run copy-src && tsc",
+    "dev-gui": "concurrently \"tsc -w\" \"npm run copy-src && electron .\"",
+    "build-linux": "npm run build-tsc; electron-builder --linux"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhalili/OS-Scheduling.git"
+  },
+  "keywords": [
+    "CLI",
+    "OS",
+    "Desktop",
+    "Scheduling",
+    "Policies",
+    "FCFS",
+    "RR",
+    "SJF",
+    "SRTF"
+  ],
+  "author": {
+    "name": "AMINE EL HALILI",
+    "email": "amine.elhalili1@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elhalili/OS-Scheduling/issues"
+  },
+  "homepage": "https://github.com/elhalili/OS-Scheduling#readme",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^20.12.12",
+    "concurrently": "^8.2.2",
+    "copyfiles": "^2.4.1",
+    "electron": "30.0.4",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}

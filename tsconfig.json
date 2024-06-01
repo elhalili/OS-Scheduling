@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "./compiled/src",
+      "rootDir": "./src",
+      "target": "ESNext",
+      "module": "CommonJS",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "types": ["electron"],
+    },
+    "include": ["src/**/*"]
+}
