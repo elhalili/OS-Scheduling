@@ -19,13 +19,13 @@ This project application for exploring various operating system scheduling polic
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yo/OS-Scheduling.git
+   git clone https://github.com/elhalili/OS-Scheduling.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd os-scheduling
+   cd OS-Scheduling
    ```
 
 3. Install dependencies:
